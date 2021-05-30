@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-attendence</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <section id="home">
+        <section class="company_title">
+            <span class="comp">MA Design India Pvt.Ltd</span>
+            <span class="company_span">New Delhi,okhla <br>
+                Industrial Area, phase-2 <br>
+                 GautamBudhNagar <br>
+                D - 32/7</span>
+        </section>
+        <section class="sec2">
+            <p>E-ATTENDENCE SYSTEM</p>
+        </section>
+        <section class="sec3">
+            <p>MA Design India Pvt.Ltd e-attendence system for taking and managing attenndece for
+                All the employess of the company.lorem100 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magnam</p>
+        </section>
+        <section class="sec4">
+            <section>
+                <span class="log">Login E-Attendense System <br>As</span>
+                <a href="http://localhost:8000/Attendence/sign_in_form/" class="log"><button>SUPERUSER/ADMIN</button></a>
+                <a href="http://localhost:8000/Attendence/sign_in_form/" class="log"><button>COMPANY STAFF/EMPLOYEES</button></a>
+            </section>
+        </section>
+        <section class="sec5">
+            <form action="http://localhost:8000/Attendence/cmpform/" method="POST">
+                {% csrf_token %}
+                <table>
+                    <tr><th colspan="2" class="main">Compalint/Request/Apeale</th></tr>
+                    <tr><th>&nbsp;</th></tr>
+                   {{form}}
+                    <tr ><th class="sub"colspan="2"><input class="submit" type="submit" value="Submit"></th></tr>
+                </table>
+            </form>
+            {% if messages%}
+            {% for mess in messages%}
+            <div class="alert alert-primary text-center">{{mess}}</div>
+
+            {% endfor %}
+            {% endif %}
+        </section>
+        <section class="sec6">
+            <section>
+               <span> <img src="{% static 'images/mail.png' %}" alt="">
+                <img src="{% static 'images/fb.png' %}" alt="">
+                <img src="{% static 'images/lindkdin.png' %}" alt="">
+                <img src="{% static 'images/whatsapp.png' %}" alt=""></span>
+                <div><br> MA Design India Pvt Ltd 
+                    &copy; Steal,iron,copper manufacturer <br></div>
+                    <div><br> New Delhi,okhla <br>
+                Industrial Area, phase-2 <br>
+                 GautamBudhNagar <br>
+                D - 32/7 <br><br> Ph : 9811578456</div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

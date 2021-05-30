@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color:#1265b9b0;
+}
+html{
+    font-size: 100%;
+}
+/* COMPANY TITLE*/
+.company_title{
+    background-color:rgb(241, 185, 79);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color: red;
+    font-weight: bolder;
+}
+.company_span{
+    text-align: center;
+    color: navy;
+}
+
+#id_subject,#id_name,#id_mobile,#id_department,#id_Eid,.sec6 div{
+    text-align: center;
+}
+.sec2{
+    text-align: center;
+    margin-top: 30px;
+    font-style:oblique;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.sec3{
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #0b420b;
+}
+.sec4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 450px;
+    margin:auto;
+    margin-top: 30px;
+    background-image: url('../images/cloude.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.log{
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: larger;
+    text-decoration: none;
+    font-weight: bolder;
+    color: green;
+
+}
+.log button{
+    color:white;
+    background-color:#1265b9b0;
+    border: 2px solid white;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sec4 section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#id_subject,#id_name,#id_mobile,#id_department,#id_Eid{
+    margin-bottom: 20px;
+    width: 90%;
+    height: 20px;
+}
+.sec5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec5 textarea{
+    width: 94%;
+}
+.sec5 table{
+    width: 55vw;
+    background-color: #d9e4e4;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+}
+.sec5 form{
+    margin-top: 50px;
+    width: 55%;
+}
+.main{
+    text-align: center;
+    font-size: larger;
+}
+.submit
+{
+    height: 45px;
+    width: 140px;
+}
+.sub
+{
+    text-align: center;
+    height: 101px;
+}
+.sec6
+{
+    background-color: #242424;
+    height: 288px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec6 section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(230, 221, 221);
+    font-weight: bold;
+}
+.sec6 img{
+    width: 50px;
+    border-radius: 15px;
+}
+
+.error{
+    color: red;
+}
+.sec7{
+    text-align: center;
+}
+.form{
+    text-align: left;
+    background-color: #F2F2F2;
+    margin: auto;
+    width: 400px;
+    padding-left: 35px;
+    height: 415px;
+    border-radius: 5px;
+}
+.form table{
+    width: 90%;
+    height: 95%;
+}
+.f{
+    text-align: center;
+}
+
+#id_username,#id_password{
+    width: 100%;
+}
+
+/*MEIDA QUARIES*/
+
+@media only screen and (max-width:900px)
+{
+    .sec3{ display: none;}
+    .sec4{
+        height: 30vh;  
+        }
+    .sec4 section{
+        width: 252px;
+        height: 250px;
+    }
+    .sec5 table,.sec5 form{
+        width: 85vw;
+    } 
+    .form{
+        width: 300px;
+    }
+}
+@media only screen and (max-width:480px){
+    .company_span{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .company_title{
+        flex-direction: column;
+    }
+    .comp{
+        margin-top: 10px;
+    }
+    .sec2{
+        font-size: 1rem;
+    }
+    .sec4{
+        height: 30vh;  
+    }
+    .sec5 table,.sec5 form{
+        width: 95vw;
+    } 
+    .form{
+        width: 250px;
+    }   
+}
+
